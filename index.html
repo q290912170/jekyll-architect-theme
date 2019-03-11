@@ -7,7 +7,15 @@ title: Architect Theme by Jason Long
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+				<span>{{ post.date | date_to_string }} by {{ post.author }}</span>
+			</div>
+
+			{{ post.excerpt }}
+
+			<p>&#187; <a href="{{ site.baseurl }}{{ post.url }}" class="button button-primary">View Post</a></p>
+
+		</div>
+	{% endfor %}
+
 </div>
