@@ -3,10 +3,10 @@ name:         北京信息
 tagline:      A responsive theme for your project on GitHub Pages
 baseurl:      ""
 locale:       "en"
+paginate: 5
+paginate_path: "page/:num/"
 
 # Gems
 gems: [jekyll-paginate]
-paginate: 5
-paginate_path: "page/:num/"
 #Others
 markdown: kramdown
