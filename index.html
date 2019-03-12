@@ -6,22 +6,8 @@ title: 北京最新信息
 <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">
-<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-				<span>{{ post.date | date_to_string }} by {{ post.author }}</span>
-			  </ul>
-			{{ post.excerpt }}
-			<p>&#187; <a href="{{ site.baseurl }}{{ post.url }}" class="button button-primary">View Post</a></p>
-	{% endfor %}
-			</div>
-<!-- Pagination links -->
-<div class="pagination">
-	{% if paginator.previous_page %}
-		<a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous btn btn-default">Previous Page</a>
-	{% endif %}
-
-	<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-
-	{% if paginator.next_page %}
-		<a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn btn-default">Next Page</a>
-	{% endif %}
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
