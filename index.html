@@ -12,18 +12,4 @@ title: Architect Theme by Jason Long
 				{{ post.excerpt }}
     {% endfor %}
   </ul>
-  {{ post.excerpt }}
-<!-- Pagination links -->
-<div class="pagination">
-	{% if paginator.previous_page %}
-		<a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous btn btn-default">Previous Page</a>
-	{% endif %}
-
-	<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-
-	{% if paginator.next_page %}
-		<a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn btn-default">Next Page</a>
-	{% endif %}
-</div>
-{% endfor %}
 </div>
