@@ -9,7 +9,7 @@ title: Architect Theme by Jason Long
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-	{{ post.excerpt }}
+	{{ post.excerpt }}<h1>Blog Posts</h1>
   </ul>
 <!-- Pagination links -->
 <div class="pagination">
@@ -22,5 +22,5 @@ title: Architect Theme by Jason Long
 	{% if paginator.next_page %}
 		<a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn btn-default">Next Page</a>
 	{% endif %}
-</div><h1>Blog Posts</h1>
+</div>
 </div>
