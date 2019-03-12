@@ -13,8 +13,7 @@ title: Architect Theme by Jason Long
     {% endfor %}
   </ul>
   <!-- Pagination links -->
-<div class="pagination">
-	{% if paginator.previous_page %}
+{% if paginator.previous_page %}
 		<a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous btn btn-default">Previous Page</a>
 	{% endif %}
 
@@ -23,5 +22,4 @@ title: Architect Theme by Jason Long
 	{% if paginator.next_page %}
 		<a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn btn-default">Next Page</a>
 	{% endif %}
-</div>
 </div>
