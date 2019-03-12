@@ -6,7 +6,7 @@ locale:       "en"
 
 # Gems
 gems: [jekyll-paginate]
-paginate: 12
+paginate: 5
 paginate_path: "page/:num/"
 #Others
 markdown: kramdown
